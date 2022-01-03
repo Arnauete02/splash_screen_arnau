@@ -14,6 +14,8 @@
     <string name="log_in">LOG IN</string>
     <string name="sign_up">SIGN UP</string>
     <string name="new_user">NEW USER SING UP</string>
+    <string name="reset">RESET PASSWORD</string>
     <string name="already">ALREADY HAVE AN ACCOUNT</string>
     <string name="newletter">Receive Newsletter?</string>
+    <string name="text_2">We just need your registered email address to send your password reset</string>
 </resources>
