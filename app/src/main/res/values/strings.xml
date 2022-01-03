@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">splash_screen_arnau</string>
+    <string name="text_title">Pedals</string>
+    <string name="text_subtitle">Your Way of Travelling</string>
+    <string name="dash_title">Hello there, Wellcome back!</string>
+    <string name="dash_subtitle">Sing in to continue</string>
+    <string name="up_title">Hello there</string>
+    <string name="up_subtitle">Sing in to start</string>
+    <string name="hint_1">Email</string>
+    <string name="hint_2">Password</string>
+    <string name="hint_3">Name</string>
+    <string name="hint_4">Birthdate</string>
+    <string name="forgot">Forgot password?</string>
+    <string name="log_in">LOG IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="new_user">NEW USER SING UP</string>
+    <string name="already">ALREADY HAVE AN ACCOUNT</string>
+    <string name="newletter">Receive Newsletter?</string>
 </resources>
