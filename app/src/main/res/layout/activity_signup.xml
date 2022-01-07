@@ -113,6 +113,8 @@
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
+
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/birthdate"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
