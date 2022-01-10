@@ -8,9 +8,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+import java.util.Calendar;
 
 import com.google.android.material.textfield.TextInputEditText;
 
@@ -20,7 +22,7 @@ import java.util.Calendar;
 public class SignupActivity extends AppCompatActivity {
 
     private DatePickerDialog pickerDialog;
-    private TextInputEditText text_birthdate;
+    private EditText birthdate;
 
     private Spinner bikeSpinnerClass;
     private ArrayList<BikeSpinner> mBikeSpinner;
@@ -33,7 +35,7 @@ public class SignupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        text_birthdate = findViewById(R.id.text_birthdate);
+        birthdate = findViewById(R.id.birthdate);
         bikeSpinnerClass = findViewById(R.id.spinner);
         already = findViewById(R.id.already);
 
@@ -45,7 +47,7 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
 
-        text_birthdate.setOnClickListener(new View.OnClickListener() {
+        birthdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final Calendar cldr = Calendar.getInstance();
@@ -56,7 +58,7 @@ public class SignupActivity extends AppCompatActivity {
                         new DatePickerDialog.OnDateSetListener() {
                             @Override
                             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                                text_birthdate.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
+                                birthdate.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
                             }
                         }, year, month, day);
                 pickerDialog.show();
